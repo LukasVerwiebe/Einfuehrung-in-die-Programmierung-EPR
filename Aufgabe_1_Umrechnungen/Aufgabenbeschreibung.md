@@ -16,13 +16,8 @@ c = 5 / 9 * (f - 32)
 Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enthält und Fahrenheit-Werte
 in Celsius-Werte umrechnet. Führen Sie die Umrechnung für folgende Werte durch:
 
-Grad Fahrenheit:
-40
-41
-
-Sollergebnis Grad Celsius:
-4
-e
+Grad Fahrenheit: 40 | 41
+Sollergebnis Grad Celsius: 4 | 5
 
 
 ## Aufgabe 2:
@@ -34,9 +29,8 @@ e = s / 1.1401
 Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enthält und CHF-Beträgein EUR umrechnet.
 Führen Sie die Umrechnung für folgende Werte durch:
 
-CHF-Betrag:	Sollergebnis EUR-Betrag:
-100		87
-10000		8771
+CHF-Betrag:	100 | 10000
+Sollergebnis EUR-Betrag: 87 | 8771
 
 
 ## Aufgabe 3:
@@ -46,9 +40,5 @@ Der Ausdruck soll ausschließlich Operanden des Typs int enthalten.
 
 Führen Sie die Umrechnung für folgende Werte durch:
 
-Anzahl Minuten:		Sollergbnis:
-5			5
-59			59
-60			100
-61			101
-825			1345
+Anzahl Minuten: 5 | 59 | 60 | 61 | 825		
+Sollergbnis: 5 | 59 | 100 | 101 | 1345
