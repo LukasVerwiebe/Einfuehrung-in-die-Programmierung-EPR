@@ -16,9 +16,13 @@ c = 5 / 9 * (f - 32)
 Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enthält und Fahrenheit-Werte
 in Celsius-Werte umrechnet. Führen Sie die Umrechnung für folgende Werte durch:
 
-Grad Fahrenheit:	Sollergebnis Grad Celsius:
-40			          4
-41			          5
+Grad Fahrenheit:
+40
+41
+
+Sollergebnis Grad Celsius:
+4
+e
 
 
 ## Aufgabe 2:
