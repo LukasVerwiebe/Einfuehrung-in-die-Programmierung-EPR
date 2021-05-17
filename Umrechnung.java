@@ -11,7 +11,7 @@ public class Umrechnung {
     public static void main(String[] args) {
         
         /*
-            Aufgabe 1: Umrechnung von Temperaturen test
+            Aufgabe 1: Umrechnung von Temperaturen
         */
         int fahrenheit;
         int celsius;
