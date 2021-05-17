@@ -17,8 +17,8 @@ Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enth�
 in Celsius-Werte umrechnet. Führen Sie die Umrechnung für folgende Werte durch:
 
 Grad Fahrenheit:	Sollergebnis Grad Celsius:
-40			4
-41			5
+40			          4
+41			          5
 
 
 ## Aufgabe 2:
