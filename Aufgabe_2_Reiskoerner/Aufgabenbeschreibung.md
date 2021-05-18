@@ -36,16 +36,27 @@ für verschiedene Situationen durchzuführen.
 ## Beispiele für verschiedene Situationen:
 
 Reiskörner auf erstem Feld 1: 1
+
 Prozentuale Erhöhung 1: 100
+
 Ausgabe 1: 1 | 2 | 4 | 8 | 16 | 32 | 64 | 128
+
 Summe 1: 255
 
+
 Reiskörner auf erstem Feld 2: 3
+
 Prozentuale Erhöhung 2: 50
+
 Ausgabe 2: 3 | 4 | 6 | 9 | 13 | 19 | 28 | 42
+
 Summe 2: 124
 
+
 Reiskörner auf erstem Feld 3: 10
+
 Prozentuale Erhöhung 3: 0
+
 Ausgabe 3: 10 | 10 | 10 | 10 | 10 | 10 | 10 | 10
+
 Summe 3: 80
