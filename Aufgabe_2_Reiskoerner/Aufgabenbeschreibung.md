@@ -1,10 +1,10 @@
-## Praktische Aufgabe Nr. 2: Reiskörner
+# Praktische Aufgabe Nr. 2: Reiskörner
 
 In diesem Aufgabenblatt geht es darum, Berechnungen unter Verwendung von Variablen durchzuführen.
 Alle Anweisungen sollen sich in der main-Methode der Klasse Reiskoerner befinden.
 Verwenden Sie nur Variablen und Ausdrücke des Typs int.
 
-# Einführung:
+## Einführung:
 
 Vielleicht kennen Sie die Parabel vom Schachspiel und den Reiskörnern. Ein kluger Mann schenkte
 seinem König ein kostbares Schachspiel. Zum Dank gewährte ihm der König einen Wunsch. Der
@@ -13,7 +13,7 @@ immer die doppelte Anzahl auf jedes weitere. Der König hielt den Wunsch für be
 täuschte sich. Um den Wunsch zu erfüllen, würde die weltweite Reisernte eines Jahres bei Weitem
 nicht ausreichen.
 
-# Aufgabe:
+## Aufgabe:
 
 Für diese Aufgabe wandeln wir die Geschichte nun etwas ab:
 
@@ -32,7 +32,7 @@ auf dem ersten Feld und für die prozentuale Erhöhung deklariert und mit Anfang
 werden. Durch Veränderung der Werte dieser Variablen ist es dann einfach möglich, die Berechnung
 für verschiedene Situationen durchzuführen.
 
-# Beispiele für verschiedene Situationen:
+## Beispiele für verschiedene Situationen:
 
 Reiskörner auf erstem Feld 1: 1
 Prozentuale Erhöhung 1: 100
