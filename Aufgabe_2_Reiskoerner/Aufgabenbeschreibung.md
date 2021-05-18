@@ -18,6 +18,7 @@ nicht ausreichen.
 Für diese Aufgabe wandeln wir die Geschichte nun etwas ab:
 
 • Auf dem ersten Feld darf mehr als nur ein Reiskorn liegen.
+
 • Die Anzahl Reiskörner wird von Feld zu Feld nicht verdoppelt, sondern prozentual erhöht. Es
   gibt nur ganze Reiskörner, weshalb z. B. die 50%ige Erhöhung von 3 Reiskörnern zu 4 Körnern
   führt.
