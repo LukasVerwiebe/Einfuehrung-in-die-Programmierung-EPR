@@ -8,6 +8,7 @@ angewendet wird.
 
 ## Beispiel:
 Parameter: 0 | 10 | 1101 | 10001101
+
 Ergebnis: 0 | 2 | 13 | 141
 
 ## Hinweis:
