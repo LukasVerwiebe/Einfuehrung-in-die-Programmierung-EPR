@@ -1,44 +1,17 @@
-# Praktische Aufgabe Nr. 1: Umrechnungen
+# Praktische Aufgabe Nr. 17: Rationale Zahl
 
-In diesem Aufgabenblatt geht es darum, Ausdrücke zu bilden, die bestimmte Berechnungen durchführen.
+Diese Aufgabe stellt im Praktikum den Einstieg in die objektorientierte Programmierung dar. Es geht um positive rationale Zahlen, die als Bruch mit natürlichem Zähler und Nenner darstellbar sind.
 
-Um die Ergebnisse der Berechnungen darzustellen, verwenden Sie jeweils die Anweisung System.out.println(...),
-wobei Sie anstelle von ... den Ausdruck zur Berechnung einsetzen.
+Das Hauptziel dieser Aufgabe ist es, die Realisierung und Anwendung von Konstruktoren und Instanzmethoden zu üben, nicht die Feinheiten der Bruchrechnung. Falls also die letzten beiden Testfälle (s. u.) bei Ihnen nicht das gewünschte Ergebnis zeigen und sie keine Idee mehr haben, woran es liegen könnte, ist das nicht weiter schlimm.
 
-Alle diese Anweisungen sollen sich in der main-Methode der Klasse Umrechnungen befinden.
+Realisieren Sie eine Klasse RationaleZahl, deren Objekte rationale Zahlen repräsentieren und die folgende Methoden enthält:
 
+• Einen Konstruktor RationaleZahl(long), durch den ein Objekt erzeugt wird, das die übergebene ganze Zahl repräsentiert (Auch ganze Zahlen sind rational!). Sie dürfen davon ausgehen, dass der Konstruktor nur mit aktuellem Parameter größer als 0 aufgerufen wird.
 
-## Aufgabe 1:
-Die Formel zur Umrechnung einer Temperatur von der Einheit Grad Fahrenheit (f) in die Einheit Grad Celsius (c) lautet:
+• Einen Konstruktor RationaleZahl(long, long), durch den ein Objekt erzeugt wird, das den Quotienten aus Zähler (erster Parameter) und Nenner (zweiter Parameter) repräsentiert. Sie dürfen davon ausgehen, dass der Konstruktor nur mit aktuellen Parametern größer als 0 aufgerufen wird.
 
-c = 5 / 9 * (f - 32)
+• Eine Instanzmethode RationaleZahl addiere(RationaleZahl) zur Addition dieser und der übergebenen Zahl. Die Summe beider Zahlen soll als Ergebnis der Methode zurückgegeben werden. Das Objekt, das die Methode ausführt, und das übergebene Objekt sollen unverändert bleiben.
 
-Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enthält und Fahrenheit-Werte
-in Celsius-Werte umrechnet. Führen Sie die Umrechnung für folgende Werte durch:
+• Eine Instanzmethode String gibAlsText(), die eine textuelle Darstellung dieser rationalen Zahl liefert. Die Darstellung soll im Format (Beispiel) 13/12 oder 4 erfolgen, abhängig davon, ob die rationale Zahl ganzzahlig oder ein echter Bruch ist. Die Zahl soll in ihrer maximal gekürzten Form dargestellt werden (s. Testablauf).
 
-Grad Fahrenheit: 40 | 41
-Sollergebnis Grad Celsius: 4 | 5
-
-
-## Aufgabe 2:
-Der Wechselkurs des Schweizer Franken zum Euro betrug vor einigen Tagen 1,1401 CHF = 1 EUR.
-Mit diesem Kurs lautet die Formel zur Umrechnung eines CHF-Betragssin den entsprechenden EUR-Betrag e:
-
-e = s / 1.1401
-
-Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enthält und CHF-Beträgein EUR umrechnet.
-Führen Sie die Umrechnung für folgende Werte durch:
-
-CHF-Betrag:	100 | 10000
-Sollergebnis EUR-Betrag: 87 | 8771
-
-
-## Aufgabe 3:
-Realisieren Sie einen Ausdruck, der zu einer Anzahl Minuten die vollen Stunden und verbleibenden Minuten im
-Format hmm liefert. h gibt die vollen Stunden, mm die verbleibenden Minuten an.
-Der Ausdruck soll ausschließlich Operanden des Typs int enthalten.
-
-Führen Sie die Umrechnung für folgende Werte durch:
-
-Anzahl Minuten: 5 | 59 | 60 | 61 | 825		
-Sollergbnis: 5 | 59 | 100 | 101 | 1345
+Realisieren Sie außerdem eine Klasse RationaleZahlTest zum Test der Methoden der Klasse RationaleZahl. Realisieren Sie darin eine Methode main mit folgendem Testablauf. Die Schreibweise n/m meint dabei ein Objekt der Klasse RationaleZahl mit Zähler n und Nenner m.
