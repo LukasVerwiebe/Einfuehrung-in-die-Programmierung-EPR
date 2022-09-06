@@ -1,18 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktika1;
-
 /**
- *
+ * Aufgabe Nr. 12: Zahlendarstellung
+ * Diese Klasse rechnet Zahlen in Binär und Dezimalzahlen um
  * @author Lukas
  */
 public class Zahlendarstellung {
-    
-    public static void main(String[] args) {
-        
+    // Eingabe und Ausgabe von Testwerten
+    public static void main(String[] args) {        
         System.out.println("Soll-Ergebnis: 1100 Ist Ergebnis: "  
                 + addiere(1001, 11, 2)); 
         System.out.println("Soll-Ergebnis: 101001 Ist Ergebnis: "  
@@ -34,16 +27,15 @@ public class Zahlendarstellung {
         System.out.println("Soll-Ergebnis: 100000000000 Ist Ergebnis: "  
                 + addiere(11111111111L, 1, 2)); 
         System.out.println("Soll-Ergebnis: 1122 Ist Ergebnis: "  
-                + addiere(323, 133, 4));
-        
+                + addiere(323, 133, 4));        
     }
-    
+    // Je nach Zahlensystem werden die Daten an eine passende Methode für die Berechnung weitergegeben
     public static long addiere(long linkeZahl, long rechteZahl, int basis) {
         return (gueltigeZahl(linkeZahl, basis) && gueltigeZahl(rechteZahl, basis)) 
                 ? basisZahlensystem(gibDezimalWert(linkeZahl, basis) + gibDezimalWert(rechteZahl, basis), basis) 
                 : -1; 
     }
-    
+    // Prüfung ob Gültige Zahl
     public static boolean gueltigeZahl(long zahl, int basis) { 
         return zahl < 10 
                 ? zahl < basis 
@@ -51,13 +43,13 @@ public class Zahlendarstellung {
                     ? gueltigeZahl(zahl / 10, basis) 
                     : false;  
     }
-    
+    // Methode für Dezimal Umrechnung
     public static long gibDezimalWert(long zahl, int basis) { 
         return (zahl < 10) 
                 ? zahl 
                 : gibDezimalWert(zahl / 10, basis) * basis + zahl % 10; 
     }
-    
+    // Umrechnung nach Zahlensystem
     public static long basisZahlensystem(long zahlenWert, long basis) { 
         return (zahlenWert == 0) 
                 ? 0 
