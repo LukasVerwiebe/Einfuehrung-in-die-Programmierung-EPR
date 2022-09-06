@@ -1,44 +1,15 @@
-# Praktische Aufgabe Nr. 1: Umrechnungen
+# Praktische Aufgabe Nr. 23: Texttrenner
 
-In diesem Aufgabenblatt geht es darum, Ausdrücke zu bilden, die bestimmte Berechnungen durchführen.
+In vielen Anwendungen benötigt man die Funktion, einen Text anhand bestimmter Trennzeichen in Textteile zu trennen. Im Druckdialog eines Programms kann es z. B. ein Textfeld geben, in dem durch Komma getrennt die Nummern der zu druckenden Seiten eingegeben werden. Dieser Text muss dann an den Kommas getrennt werden, um die einzelnen Seitenzahlen zu erhalten.
 
-Um die Ergebnisse der Berechnungen darzustellen, verwenden Sie jeweils die Anweisung System.out.println(...),
-wobei Sie anstelle von ... den Ausdruck zur Berechnung einsetzen.
+In dieser Aufgabe sollen Sie eine Klasse Texttrenner realisieren, die eine solche Funktion anbietet und eine Zeichenkette anhand von Trennzeichen in einzelne Textteile (im Folgenden Wörter genannt) auftrennt.
 
-Alle diese Anweisungen sollen sich in der main-Methode der Klasse Umrechnungen befinden.
+Implementieren Sie in der Klasse Texttrenner also folgende Methoden:
 
+• Einen Konstruktor Texttrenner(String, String) zur Erzeugung eines Texttrenner-Objekts, mit dessen Hilfe eine Zeichenkette (1. Parameter) anhand von Trennzeichen (2. Parameter) in Wörter getrennt werden kann. Jedes einzelne Zeichen des 2. Parameters ist ein Trennzeichen.
 
-## Aufgabe 1:
-Die Formel zur Umrechnung einer Temperatur von der Einheit Grad Fahrenheit (f) in die Einheit Grad Celsius (c) lautet:
+• Eine Instanzmethode boolean hatNochWoerter(). Die Methode liefert genau dann true, wenn der Texttrenner nach den bisher gelieferten Wörtern noch mindestens ein weiteres Wort enthält.
 
-c = 5 / 9 * (f - 32)
+• Eine Instanzmethode String gibNaechstesWort(). Die Methode liefert das nächste Wort aus der zugrunde liegenden Zeichenkette. Falls die Zeichenkette kein Wort mehr enthält, liefert die Methode null.
 
-Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enthält und Fahrenheit-Werte
-in Celsius-Werte umrechnet. Führen Sie die Umrechnung für folgende Werte durch:
-
-Grad Fahrenheit: 40 | 41
-Sollergebnis Grad Celsius: 4 | 5
-
-
-## Aufgabe 2:
-Der Wechselkurs des Schweizer Franken zum Euro betrug vor einigen Tagen 1,1401 CHF = 1 EUR.
-Mit diesem Kurs lautet die Formel zur Umrechnung eines CHF-Betragssin den entsprechenden EUR-Betrag e:
-
-e = s / 1.1401
-
-Realisieren Sie einen Ausdruck, der ausschließlich Operanden des Typs int enthält und CHF-Beträgein EUR umrechnet.
-Führen Sie die Umrechnung für folgende Werte durch:
-
-CHF-Betrag:	100 | 10000
-Sollergebnis EUR-Betrag: 87 | 8771
-
-
-## Aufgabe 3:
-Realisieren Sie einen Ausdruck, der zu einer Anzahl Minuten die vollen Stunden und verbleibenden Minuten im
-Format hmm liefert. h gibt die vollen Stunden, mm die verbleibenden Minuten an.
-Der Ausdruck soll ausschließlich Operanden des Typs int enthalten.
-
-Führen Sie die Umrechnung für folgende Werte durch:
-
-Anzahl Minuten: 5 | 59 | 60 | 61 | 825		
-Sollergbnis: 5 | 59 | 100 | 101 | 1345
+Realisieren Sie außerdem eine Klasse TexttrennerTest zum Test der Methoden der Klasse Texttrenner. Realisieren Sie darin folgenden Testablauf.
