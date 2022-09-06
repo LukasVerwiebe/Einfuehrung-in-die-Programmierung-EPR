@@ -14,7 +14,9 @@ Hinweis: Sie müssen die Nullen nicht vorab ausfiltern. Entwickeln Sie die Metho
 Sortieren durch Mischen ist ein sehr effizientes Sortierverfahren. In der Praxis sortiert man i. A. jedoch nicht die Ziffern einer Zahl, sondern z.B. Wörter oder andere Daten. Da wir bisher noch keine anderen Daten als Zahlen kennengelernt haben, wenden wir es hier auf die Ziffern einer Zahl an. Vom Prinzip her ist das kein Unterschied.
 
 Beispiele für die Funktionsweise von sortiere:
+
 ![image](https://user-images.githubusercontent.com/63674539/188528514-f27dc36f-d5b8-4f79-ac8d-f8b5fde6c9ef.png)
 
 Beispiele für die Funktionsweise von mischen:
+
 ![image](https://user-images.githubusercontent.com/63674539/188528543-000b4ad5-43e8-4303-93aa-29d2906c32bc.png)
