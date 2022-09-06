@@ -1,17 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktika1;
-
 /**
- *
+ * Aufgabe Nr. 15: Ziffern Sortieren
+ * Diese Klasse sortiert eine eingebene Zahl nach ihren Ziffern
  * @author Lukas
  */
 public class ZiffernSortieren {
-    public static void main(String[] args) {
-        
+    // Eingabe und Ausgabe von Testwerten
+    public static void main(String[] args) {        
         System.out.println("Sortiere");
         System.out.println("Soll: 1 Ist: " + sortiere(1)); 
         System.out.println("Soll: 15 Ist: " + sortiere(5001)); 
@@ -20,16 +14,15 @@ public class ZiffernSortieren {
         
         System.out.println("Soll: 12 Ist: " + mische(1, 2)); 
         System.out.println("Soll: 112256789 Ist: " + mische(11569, 2278)); 
-        System.out.println("Soll: 112345678 Ist: " + mische(5, 11234678));
-        
+        System.out.println("Soll: 112345678 Ist: " + mische(5, 11234678));        
     }
-    
+    // Methode zum ermitteln der Länge der Zahl
     public static int laenge(long zahl) { 
         return ((zahl == 0) 
                 ? 0 
                 : laenge(zahl / 10) + 1); 
     }
-    
+    // Methode zum sortieren der Zahl und Aufruf der Methode mische
     public static long sortiere(long zahl) { 
         // Ist die Zahl kleiner als 10?         
         return zahl < 10
@@ -41,7 +34,7 @@ public class ZiffernSortieren {
                 // dem Rekursionsende ausrechnet.
                 : mische(sortiere(zahl / (long)Math.pow(10, laenge(zahl) / 2)), sortiere(zahl % (long)(Math.pow(10, laenge(zahl) / 2))));
     }
-
+    // Methode die zwei ziffernweise sortierte Zahlen zu einer sortierten Zahl
     public static long mische(long zahl1, long zahl2) { 
         // Eine von beiden Zahlen muss noch Zahlen haben. 
         return (zahl1 > 0 || zahl2 > 0) 
