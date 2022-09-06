@@ -1,27 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktika1.FarbeOO;
-
 /**
- *
+ * Aufgabe Nr. 16: Farbe objekt-orientiert
+ * Diese Klasse gibt Farben als RGB-Farben aus
  * @author Lukas
  */
-public class Farbe {    
-    private final int rot;
-    
-    private final int gruen; 
-    
+public class Farbe {   
+    // Initialisierung der Variablen
+    private final int rot;    
+    private final int gruen;     
     private final int blau;
     
+    // Methode zur Zuweisung der Farben
     public Farbe(int rot, int gruen, int blau){
         this.rot = rot;
         this.gruen = gruen;
         this.blau = blau;
     }
     
+    // Test Methode: Wird nicht verwendet
     public void ausgabe(){
         System.out.print(this.rot + " ");
         System.out.print(this.gruen + " ");
@@ -29,6 +24,7 @@ public class Farbe {
         System.out.println("");
     }
     
+    // Methode zum Invertieren der Einbgabenen Farbe
     public int gibInvertiereFarbe(){
         int rot = this.rot;
         int gruen = this.gruen;
@@ -41,6 +37,7 @@ public class Farbe {
         return (rot * 1000000 + gruen * 1000 + blau);
     }
     
+    // Methode zur Ausgabe der nächsten Farbe
     public int gibNaechsteFarbe(){
         int rot = this.rot;
         int gruen = this.gruen;
@@ -61,16 +58,15 @@ public class Farbe {
         return (rot * 1000000 + gruen * 1000 + blau);
     }
     
+    // Methode für die Ausgabe der Farben als Text
     public String gibAlsText() {
         String anzeige;
         anzeige = "(" + this.rot + ", " + this.gruen 
                 + ", " + this.blau + ")";
         return anzeige;
-    }
+    }   
     
-    
-    
-    
+    // Einagbe und Ausgabe von Testwerten
     public static void main(String[] args) {
         
         Farbe test1 = new Farbe(255, 255, 255);        
@@ -97,8 +93,6 @@ public class Farbe {
         System.out.println(test3.gibAlsText());
         System.out.println(test4.gibAlsText());
         System.out.println(test5.gibAlsText());
-        System.out.println(test6.gibAlsText());
-        
-    }
-    
+        System.out.println(test6.gibAlsText());        
+    }    
 }
