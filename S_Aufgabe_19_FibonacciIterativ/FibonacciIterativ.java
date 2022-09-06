@@ -1,25 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktika1;
-
 /**
- *
+ * Aufgabe Nr. 19: Fibonacci Iterativ
+ * Klasse zur Berechnung der Fibonacci-Funktion ohne Rekursion
  * @author Lukas
  */
 public class FibonacciIterativ {
-    
-    public static void main(String[] args) {
-        
+    // Einagbe und Ausgabe von Testwerten
+    public static void main(String[] args) {        
         System.out.println(fib(5));
     }
-    
+    // Methode zur Berechnung der Fibonacci-Funktion
     public static long fib(int n) {        
         int vorl = 0;
         int letztes = 1;
-        
+        // Berechnung mittels einer For Schleife
         for (int i = 1; i < n; i++) {
             int zwischenwert = letztes;
             letztes = vorl + letztes;
