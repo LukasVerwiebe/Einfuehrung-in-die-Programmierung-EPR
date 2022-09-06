@@ -1,20 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktika1;
-
 /**
- *
+ * Aufgabe Nr. 20: Gleiche Buchstaben
+ * Klasse die das Längste Konstante Stück eines Strings wiedergibt
  * @author Lukas
  */
 public class GleicheBuchstaben {
-    
+    // Eingabe und Ausgabe von Testwerten
     public static void main(String[] args) {
         System.out.println(gibLaengstesKonstantesStueck("AAAABBCCDDDDDDDDDeeeeeAeeeeee"));
     }
-    
+    // Methode zum Zählen der Textstellen
     public static String gibLaengstesKonstantesStueck(String text) {
         String zwischenwert = "";
         for (int i = 0; i < text.length(); i++) {
