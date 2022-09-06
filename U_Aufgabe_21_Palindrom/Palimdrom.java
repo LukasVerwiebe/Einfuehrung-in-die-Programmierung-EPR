@@ -1,25 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktika1;
-
 /**
- *
+ * Aufgabe Nr. 21: Palindrom
+ * Klasse für die Überprüfung ob es sich bei einem String um ein Palindrom handelt
  * @author Lukas
  */
 public class Palimdrom {
-    
+    // Eingabe und Ausgabe von Testwerten
     public static void main(String[] args) {
         System.out.println(istPalimdrom("anna"));
         System.out.println(istPalimdrom("Anna"));
         System.out.println(istPalimdrom("reger"));
-        System.out.println(istPalimdrom("012345678-876543210"));
-        
-        
+        System.out.println(istPalimdrom("012345678-876543210"));       
     }
-    
+    // Methode zur Prüfung des Strings
     public static boolean istPalimdrom(String text) {
         boolean ergebnis = false;
         int j = text.length() - 1;
