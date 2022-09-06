@@ -1,30 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package RationaleZahl;
-
 /**
- *
+ * Aufgabe Nr. 17: Rationale Zahl
  * @author Lukas
  */
 public class RationaleZahl {
     
     private long zahl;
     private long zähler;
-    private long nenner;
+    private long nenner;    
     
-    
+    // Konstruktor für die Rationale Zahl
     public RationaleZahl(long zahl){
         this.zahl = zahl;        
     }
     
+    // Konstruktor mit Quotienten und Nenner
     public RationaleZahl(long zähler, long nenner){
         this.zähler = zähler;
         this.nenner = nenner;
     }
     
+    // Methode zum Addieren der Rationalen Zahl und einer Übergebenen Zahl
     public RationaleZahl addiere(RationaleZahl zahl) {
         long zähler1 = this.zähler;
         long nenner1 = this.nenner;
@@ -38,7 +33,7 @@ public class RationaleZahl {
         return new RationaleZahl(neuerZähler, neuerNenner);
     }
     
-    
+    // Methode zur Ausgabe als Text
     public String gibAlsText(){
         long zahl = this.zahl;
         long zähler = this.zähler;
@@ -50,11 +45,5 @@ public class RationaleZahl {
             ausgabe = "Rationale Zahl: " + zahl;
         }
         return ausgabe;
-    }
-    
-    
-    
-    
-    
-    
+    }       
 }
