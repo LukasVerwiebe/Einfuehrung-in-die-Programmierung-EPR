@@ -1,16 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package praktika1;
-
 /**
- *
+ * Aufgabe Nr. 13: Zahlenspielerei
+ * Diese Klasse führt unterschiedliche Operationen aus:
+ * - Zahlen verketten
+ * - Prüfen ob Zahl enthalten
+ * - Anzahl einer Ziffer in einer Zahl
+ * - Eine Ziffer aus einer Zahl entfernen
  * @author Lukas
  */
 public class Zahlenspielerei {
-    
+    // Eingabe und Ausgabe von Testwerten
     public static void main(String[] args) {
         System.out.println("Verkette: ");
         System.out.println(verkette(4711, 1));
@@ -40,17 +38,16 @@ public class Zahlenspielerei {
         System.out.println(filter(0, 0));
         System.out.println(filter(0, 5));
         
-        System.out.println(filter(4171, 1));
-        
+        System.out.println(filter(4171, 1));      
         
     }
-    
+    // Methode um Zahlen zu verketten
     public static long verkette(long zahl1, long zahl2) {
         return zahl2 < 10
                 ? zahl1 * 10 + zahl2
                 : verkette(zahl1, zahl2 / 10) * 10 + zahl2 % 10;
     }
-    
+    // Methode für die Überprüfung ob eine Ziffer in einer Zahl enthalten ist
     public static boolean enthaelt(long zahl, int ziffer) {
         return (ziffer > 0) 
                 ? (zahl % 10 == ziffer)
@@ -58,7 +55,7 @@ public class Zahlenspielerei {
                     ? enthaelt(zahl / 10, ziffer) 
                     : true;
     }
-    
+    // Methode zur Angabe der häufigkeit einer Ziffer
     public static int gibAnzahl(long zahl, int ziffer) {
         return zahl < 10
                 ? zahl == ziffer
@@ -75,7 +72,7 @@ public class Zahlenspielerei {
 //                    ? gibAnzahl(zahl / 10, ziffer) + 1
 //                    : 0;
     }
-    
+    // Filter Methode um eine Ziffer aus einer Zahl zu entfernen
     public static long filter(long zahl, int ziffer) {
         return (zahl < 10)
                 ? (zahl == ziffer)
