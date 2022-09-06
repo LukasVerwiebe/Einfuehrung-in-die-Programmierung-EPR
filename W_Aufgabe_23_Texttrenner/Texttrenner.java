@@ -1,12 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Texttrenner;
-
 /**
- *
+ * Aufgabe Nr. 23: Texttrenner
  * @author Lukas
  */
 public class Texttrenner {
@@ -45,9 +38,7 @@ public class Texttrenner {
         return (wort.length() == 0) 
                 ? null 
                 : wort; 
-    }
-    
-    
+    }    
     
 //    public String gibNachstesWort() {
 //        int zeichenZähler = 0;
@@ -81,8 +72,7 @@ public class Texttrenner {
             wortAnfang = wortAnfang + 1; 
         } 
         return wortAnfang; 
-    }
-    
+    }    
     
     public void ausgabe(){
         System.out.println(this.zeichenkette);
