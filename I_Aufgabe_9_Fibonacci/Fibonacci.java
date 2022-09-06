@@ -10,7 +10,7 @@ public class Fibonacci {
      * @param args wird nicht verwendet 
      */
     public static void main(String[] args) {
-		//Testfall Berechnung mit 20 Ergebnis = 6765
+	//Testfall Berechnung mit 20 Ergebnis = 6765
         System.out.println(fib(20));
     }
 	
@@ -25,11 +25,7 @@ public class Fibonacci {
     }
 	
     /**
-     * Diese Methode berechnet die Fibonacci-Funktion je nach größe 
-     * @param n
-     * @param vorletzte
-     * @param letzte
-     * @return 
+     * Diese Methode berechnet die Fibonacci-Funktion je nach größe
      */
     public static long  fib(int n, long vorletzte, long letzte) {     
         return (n <= 0) ? letzte + vorletzte
