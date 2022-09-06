@@ -1,6 +1,6 @@
 /**
  * Aufgabe Nr. 18: Absteigende Zahl
- * Klasse 
+ * Klasse zur Prüfung ob eine Zahl Absteigend ist oder nicht
  * @author Lukas
  */
 public class AbsteigendeZahl {
